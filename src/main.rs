@@ -7,4 +7,6 @@ fn main() {
     println!("{:?}", Pair::pair_vector_sum(&(345, 584), &(2, 3)));
 
     println!("{:?}", Signed::default_signed_counter());
+    println!("{:?}", Signed::next_signed(10));
+    println!("{:?}", Signed::prev_signed(10));
 }

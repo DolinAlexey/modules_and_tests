@@ -5,7 +5,7 @@ pub trait Signed {
     fn prev_signed(&self, counter: SignedCounter) -> SignedCounter;
 }
 
-impl<T: Signed> Signed for T {
+impl Signed for i32 {
     fn default_signed_counter() -> SignedCounter {
         0
     }
