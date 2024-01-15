@@ -16,7 +16,7 @@ fn main() {
     println!("{:?}", <usize as Unsigned>::default_unsigned_counter());
     println!("{:?}", <usize as Unsigned>::next_unsigned(10));
 
-    println!("{:?}", Vec3 as Vector>::default_vec3());
+    println!("{:?}", Vec3 as dyn Vector>::default_vec3());
     println!("{:?}", Vector::vec3_scalar_sum([345, 584, 33], [394, 98, 372]));
     println!("{:?}", Vector::vec3_vector_sum([1, 2, 3], [4, 5, 6]));
 }
