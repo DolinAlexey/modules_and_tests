@@ -9,7 +9,7 @@ impl Signed for i32 {
     fn default_signed_counter() -> SignedCounter {
         0
     }
-    fn next_signed(&self, counter: SignedCounter) -> SignedCounter {
+    fn next_signed(&self) -> SignedCounter {
         counter + 1
     }
     fn prev_signed(&self, counter: SignedCounter) -> SignedCounter {
