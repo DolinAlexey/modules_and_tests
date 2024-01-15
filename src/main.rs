@@ -6,7 +6,7 @@ fn main() {
     println!("{:?}", Pair::pair_scalar_sum(&(872, 962), &(772, 72)));
     println!("{:?}", Pair::pair_vector_sum(&(345, 584), &(2, 3)));
 
-    println!("{:?}", Signed::default_signed_counter());
+    println!("{:?}", <i32 as Signed>::default_signed_counter());
     println!("{:?}", Signed::next_signed(&10));
 
 }
