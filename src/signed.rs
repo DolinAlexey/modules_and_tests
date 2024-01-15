@@ -10,7 +10,7 @@ impl Signed for i32 {
         0
     }
     fn next_signed(&self) -> SignedCounter {
-        self + 1
+        (self + 1).try_into().unwrap()
     }
     fn prev_signed(&self, counter: SignedCounter) -> SignedCounter {
         counter - 1
