@@ -1,7 +1,7 @@
 type SignedCounter = isize;
 pub trait Signed {
     fn default_signed_counter() -> SignedCounter;
-    fn next_signed(&self, counter: SignedCounter) -> SignedCounter;
+    fn next_signed(counter: SignedCounter) -> SignedCounter;
     fn prev_signed(&self, counter: SignedCounter) -> SignedCounter;
 }
 
