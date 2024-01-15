@@ -1,4 +1,5 @@
 use modules_and_tests::pair::Pair;
+use modules_and_tests::signed::Signed;
 
 fn main() {
     println!("{:?}", <(i32, i32) as Pair>::default_pair());
