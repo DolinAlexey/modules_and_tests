@@ -7,7 +7,7 @@ pub trait Vector {
     fn vec3_vector_sum(a: Vec3, b: Vec3) -> Vec3;
 }
 
-impl<T: Vector> Vector for T {
+impl Vector for Vec3 {
     fn default_vec3() -> Vec3 {
         [0; 3]
     }
