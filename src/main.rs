@@ -8,5 +8,5 @@ fn main() {
 
     println!("{:?}", Signed::default_signed_counter());
     println!("{:?}", Signed::next_signed(&10, isize));
-    println!("{:?}", Signed::prev_signed(&10));
+
 }
