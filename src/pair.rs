@@ -17,9 +17,8 @@ impl Pair for (i32, i32) {
 }
 
 #[cfg(test)]
-mod tests {
-    use super::*;
-
+mod tests_pair {
+    use crate::pair::Pair;
     #[test]
     fn it_works() {
         assert_eq!(<(i32, i32) as Pair>::default_pair(), (0, 0));

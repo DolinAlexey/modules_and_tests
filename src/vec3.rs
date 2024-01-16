@@ -26,3 +26,18 @@ impl Vector for Vec3 {
         c
     }
 }
+
+
+#[cfg(test)]
+mod tests_vec3 {
+    use crate::vec3::Vec3;
+    use crate::vec3::{Vector};
+
+
+    #[test]
+    fn it_works() {
+        assert_eq!(<Vec3 as Vector>::default_vec3(), [0,0,0]);
+        assert_eq!(<Vec3 as Vector>::vec3_scalar_sum([345, 584, 33], [394, 98, 372]), 1826);
+        assert_eq!(<Vec3 as Vector>::vec3_vector_sum([345, 584, 285], [284, 293, 194]), [629, 877, 479]);
+    }
+}
