@@ -24,7 +24,7 @@ mod tests_signed {
     #[test]
     fn it_works() {
         assert_eq!(<SignedCounter as Signed>::default_signed_counter(), (0));
-        assert_eq!(<SignedCounter as Signed>::next_signed (10), 11);
+        assert_eq!(<SignedCounter as Signed>::next_signed(10), 11);
         assert_eq!(<SignedCounter as Signed>::prev_signed(10), 9);
     }
 }
